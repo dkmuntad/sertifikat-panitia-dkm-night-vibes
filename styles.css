@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 5vw;
+    font-family: 'Norwester', sans-serif;
+    background: #f0f0f0;
+  }
+
+  #sertifikat-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+  }
+  
+  #sertifikat-template {
+    width: 100%;
+  }
+  #nama, #jabatan {
+    position: absolute;
+    width: 80%;
+    text-align: center;  
+    padding: 10px;  
+  }
+
+  #nama {
+    position: absolute;
+    top: calc(23.8vw + 2%);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.5vw; /* akan menyesuaikan dengan lebar layar */
+    color: #d32227;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+
+  #jabatan {
+    position: absolute;
+    top: calc(33.3vw + 2%);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5vw; /* akan menyesuaikan dengan lebar layar */
+    color: #000;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .button-container {
+    position: absolute;
+    top: 72vw; /* sesuaikan dengan posisi elemen sertifikat */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 10;
+  }
+  
+
+  .btn-unduh {
+    padding: 1.2vw 4vw;
+    font-size: 2vw;
+    color: #fff;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .btn-unduh:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: scale(1.05);
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.3);
+  }
+
+  .modal-nim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .modal-content input {
+    padding: 0.7rem;
+    font-size: 1rem;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  
+  .modal-content button {
+    padding: 0.7rem 1.5rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  
+
+  @media (max-width: 768px) {
+    #nama {
+      top: calc(22.3vw + 4%);
+    }
+    #jabatan {
+      top: calc(33.3vw + 1.5%);
+    }
+  }
+  @media (max-width: 600px) {
+    #nama {
+      top: calc(22.3vw + 3%);
+    }
+    #jabatan {
+      top: calc(33.3vw + 1%);
+    }
+  }
+  @media (max-width: 450px) {
+    #nama {
+      top: calc(22.3vw + 2%);
+    }
+    #jabatan {
+      top: calc(33.3vw);
+    }
+  }
+  

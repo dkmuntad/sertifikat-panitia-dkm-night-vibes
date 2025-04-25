@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sertifikat Otomatis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+      <div id="sertifikat-container">
+        <img src="sertifikat-template.png" id="sertifikat-template" alt="Template Sertifikat">
+        <div id="nama"></div>
+        <div id="jabatan"></div>
+      </div>
+    <div class="button-container">
+      <button class="btn-unduh" onclick="downloadSertifikatpdf()">Unduh Sertifikat PDF</button>
+      <button class="btn-unduh" onclick="downloadSertifikatpng()">Unduh Sertifikat PNG</button>
+    </div>
+    <div id="modal-nim" class="modal-nim">
+      <div class="modal-content">
+        <h2>Masukkan NIM Anda</h2>
+        <input type="text" id="input-nim" placeholder="Contoh: 12345" />
+        <button onclick="submitNIM()">Submit</button>
+      </div>
+    </div>
+    
+    
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
